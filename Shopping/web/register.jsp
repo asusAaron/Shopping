@@ -11,35 +11,32 @@
 </head>
 <body style=" background:url(img/login.jpg) no-repeat center fixed; background-size: 100%;  ">
 <h3 style="text-align:center;margin-top:2%;">图书管理系统</h3>
-<form class="form-horizontal" role="form">
+<form action="<%=request.getContextPath() %>/registerservlet" class="form-horizontal" role="form" method="post">
 	<div style="margin:10% 25% 5% 25%"class="form-group">
 		<label for="firstname" class="col-sm-2 control-label"><span class="glyphicon glyphicon-envelope">
 		</span>&nbsp;邮箱账号
 		</label>
 		<div  class="col-sm-10">
-			<input type="text" class="form-control" id="firstname" 
-				   placeholder="请输入邮箱，格式为：aaa@aaa">
+			<input type="text" class="form-control" id="firstname" name="username">
 		</div>
 	</div>
 	<div style="margin:0 25% 5% 25%" class="form-group">
 		<label for="password" class="col-sm-2 control-label">密码</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" 
-				   placeholder="请输入密码，密码个数必须大于6位数">
+			<input type="password" class="form-control" id="lastname" name="password">
 		</div>
 	</div>
 	<div style="margin:0 25% 5% 25%" class="form-group">
 		<label for="password" class="col-sm-2 control-label">密码确认</label>
 		<div class="col-sm-10">
-			<input type="text" class="form-control" id="lastname" 
-				   placeholder="请再次输入密码">
+			<input type="password" class="form-control" id="lastname" name="password2">
 		</div>
 	</div>
 	<div style="margin:10% 35% 5% 40%"class="form-group">
 		<div class="col-sm-offset-2 col-sm-10">
 			<button type="button" class="btn btn-info">重置</button>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<button type="button" class="btn btn-danger">注册</button>
+			<button type="submit" class="btn btn-danger">注册</button>
 		</div>
 	</div>
 </form>

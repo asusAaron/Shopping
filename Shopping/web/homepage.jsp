@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+<%@ page language="java" contentType="text/html; charset=utf-8" import = "cn.mj.*"
     pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,6 +9,10 @@
 	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<%
+	User user = (User)session.getAttribute("user");
+	UserManage manage = new UserManage();
+%>
 <body>
 
 <div id="all">
@@ -27,7 +31,7 @@
 		</a>
 		<ul class="dropdown-menu">
 			<li><a href="personInfo.jsp">
-          <span class="glyphicon glyphicon-user"></span>&nbsp;User
+          <span class="glyphicon glyphicon-user"></span>&nbsp;<%=user.getName()%>
         </a></li>
 		    <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;设置</a></li>
             <li><a href="homepage.jsp"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
