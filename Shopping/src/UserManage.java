@@ -5,6 +5,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class UserManage {
 
 	// 添加用户
@@ -84,5 +85,25 @@ public class UserManage {
 			ConMysql.close();
 		}
 		return users;
+	}
+	// 检查用户登录
+	public boolean userLogin(User user) {
+		String sql = "SELECT * FROM user WHERE userName=?";
+		boolean flag = false;
+		try {
+			ConMysql.prepareConnection();
+			ConMysql.ps = ConMysql.con.prepareStatement(sql);
+			ConMysql.ps.setString(1, user.getName());
+			ResultSet rs = ConMysql.ps.executeQuery();
+			while (rs.next()) {
+				if (rs.getString("password").equals(user.getPassword()))
+					flag = true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			ConMysql.close();
+		}
+		return flag;
 	}
 }
