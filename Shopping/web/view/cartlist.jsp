@@ -41,18 +41,57 @@
 	</li>
 </ul>
 </div>
-<!--个人信息 -->
-
-<p style="margin-left:20%;margin-top:8%;">个人信息</p>
-<div style="width:100%;height:100%">
-<div style="margin-right:2%;margin-left:15%;margin-top:4%;float:left; width:20%;height:60%">
-      <img style="width:250px;height:300px;" 
-       src="img/person.jpg" alt="叶子图书"class="img-rounded">                                    
+<!--购物车 -->
+<div style="margin:0 2% 0 2%;">
+<table class="table table-striped table-bordered table-hover">
+	<caption style="margin-left:47%;margin-top:4%;">我的购物车</caption>
+	<thead>
+		<tr>
+			<th style="text-align:center">书名</th>
+			<th style="text-align:center">操作状态</th>
+		</tr>
+	</thead>
+	<tbody>
+	    <tr>
+	        <td>
+	<div style="margin-right:1%;margin-left:20%;margin-top:0;float:left;width:40%;height:20%">
+<div class="row">
+        <div class="thumbnail">
+            <img src="img/book.jpg" alt="叶子图书"
+            style="width:150px;height:200px;">                           
+            <div class="caption">   
+            <h3 style="text-align:center;">叶子图书</h3>           
+                <p>售价:&nbsp;<span id="price">100</span></p>
+                <p>库存:&nbsp;<span id="bookNumber">80</span></p>
+            </div>
+        </div>  
 </div>
-<div style=";margin-top:18%;margin-left:8%;float:left; width:20%;height:60%">
-      <p>手机号：&nbsp;<span id="iponeNumber">13015846233</span></p>  
-      <p>邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="iponeNumber">13015@qq.com</span></p>                                  
+</div></td>
+			<td>
+   <div style="margin-right:1%;margin-top:4%;margin-left:30%;float:left; width:30%;height:40%">
+<p id="actor">作者: [英] 夏洛特·勃朗特 著</p>
+<p id="publisher">出版社: 世界图书出版公司</p>
+<p id="publishTime">出版时间: 2011-10</p>
+<div>
+        <p>购买数量
+        <button type="button"onclick="minus()" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        <span id="number">0</span>
+        <button type="button"onclick="plus()" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        </p>
 </div>
+<p>总价格为：&nbsp;<span id="sumNumber">0</span></p>
+<div style="margin-left:1%;margin-top:30%">
+<button type="button" class="btn btn-info"onclick="buy()">立即购买</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="cartlist.jsp"><button type="button" class="btn btn-danger"onclick="checkcart()">取消订单</button></a>
+</div>
+</div></td>
+		</tr>
+	</tbody>
+</table>
 </div>
 <script>
 
@@ -76,9 +115,27 @@ function plus(){
 	var temp=price*(num+1);
 	document.getElementById('sumNumber').innerHTML=temp;
 }
+//购买图书
+function buy(){
+	var money=parseInt(document.getElementById('sumNumber').innerHTML);
+	var r=confirm("你 购买的图书总价为："+money);
+	if (r==true){
+		alert("你已经成功付款！");//成功付款
+	}
+	else{
+		alert(x="付款失败！");//取消付款
+	}
+}
 //购买中相应进入哪个图书页面
-function buypage(){
-	
+function checkcart(){
+	var x;
+	var r=confirm("你确定取消该订单吗？");
+	if (r==true){
+		alert("取消订单成功！");//如果点击了确认，那么链接启动，删除数据库中的内容后重新将订单写出来
+	}
+	else{
+		alert("取消失败！");//取消操作，一切依旧
+	}
 }
 function custom_close(){
     if(confirm("您确定退出吗？")){

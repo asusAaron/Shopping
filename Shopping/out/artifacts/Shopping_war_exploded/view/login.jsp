@@ -13,6 +13,9 @@
 		} else if (document.getElementById("id").value == "") {
 			alert("请输入账号");
 			return false;
+		} else if ((document.getElementById("id").value).length!=11) {
+			alert("账号格式不对，请重新输入！");
+			return false;
 		} else if (document.getElementById("password").value == "") {
 			alert("请输入密码！");
 			return false;
@@ -21,6 +24,16 @@
 		}
 
 	}
+function checkPhoneInput(){
+	//获得输入字符
+	var input=document.getElementById("firstname").value;
+	if(input.length!=11){
+		document.getElementById("firstname").style.color='red';
+	}	
+	else{
+		document.getElementById("firstname").style.color='black';
+	}
+}
 </script>
 <%
 	Object message = session.getAttribute("message");
@@ -92,16 +105,16 @@
 		<form action="<%=request.getContextPath()%>/login" class="form-horizontal" method="post">
 			<div class="form-group">
 				<label for="firstname" class="col-sm-2 control-label">
-					<span class="glyphicon glyphicon-envelope"> </span>
+					<span class="glyphicon glyphicon-user" style="font-size: 20px;"> </span>
 				</label>
 				<div class="col-sm-10">
-					<input type="text" class="form-control" id="firstname"
-						   name="username" placeholder="请输入邮箱">
+					<input onBlur="checkPhoneInput()" type="text" class="form-control" id="firstname"
+						   name="username" placeholder="请输入您的手机号">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="password" class="col-sm-2 control-label"> <span
-						class="glyphicon glyphicon-lock"></span>
+				<label for="lastname" class="col-sm-2 control-label">
+					<span class="glyphicon glyphicon-lock" style="font-size: 20px;"></span>
 				</label>
 				<div class="col-sm-10">
 					<input type="password" class="form-control" id="lastname"
@@ -110,9 +123,9 @@
 			</div>
 			<div class="form-group">
 				<div class="btn-container">
-					<button type="button" class="btn btn-success" onclick="window.location.href('register.jsp')">注册</button>
+					<button type="button" class="btn btn-success" onclick="window.location.href('view/register.jsp')">注册</button>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<button type="submit" class="btn btn-danger">登录</button>
+					<button onclick="checkId()" type="submit" class="btn btn-danger">登录</button>
 				</div>
 			</div>
 			<div  class="form-group">

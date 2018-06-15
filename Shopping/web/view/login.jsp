@@ -26,12 +26,12 @@
 	}
 function checkPhoneInput(){
 	//获得输入字符
-	var input=document.getElementById("phoneInput").value;
+	var input=document.getElementById("firstname").value;
 	if(input.length!=11){
-		document.getElementById("phoneInput").style.color='red';
+		document.getElementById("firstname").style.color='red';
 	}	
 	else{
-		document.getElementById("phoneInput").style.color='black';
+		document.getElementById("firstname").style.color='black';
 	}
 }
 </script>
@@ -105,16 +105,16 @@ function checkPhoneInput(){
 		<form action="<%=request.getContextPath()%>/login" class="form-horizontal" method="post">
 			<div class="form-group">
 				<label for="firstname" class="col-sm-2 control-label">
-					<span class="glyphicon glyphicon-envelope"> </span>
+					<span class="glyphicon glyphicon-user" style="font-size: 20px;"> </span>
 				</label>
 				<div class="col-sm-10">
-					<input id="phoneInput"onBlur="checkPhoneInput()" type="text" class="form-control" id="firstname"
+					<input onBlur="checkPhoneInput()" type="text" class="form-control" id="firstname"
 						   name="username" placeholder="请输入您的手机号">
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="password" class="col-sm-2 control-label"> <span
-						class="glyphicon glyphicon-lock"></span>
+				<label for="lastname" class="col-sm-2 control-label">
+					<span class="glyphicon glyphicon-lock" style="font-size: 20px;"></span>
 				</label>
 				<div class="col-sm-10">
 					<input type="password" class="form-control" id="lastname"
@@ -123,7 +123,7 @@ function checkPhoneInput(){
 			</div>
 			<div class="form-group">
 				<div class="btn-container">
-					<button type="button" class="btn btn-success" onclick="window.location.href('register.jsp')">注册</button>
+					<button type="button" class="btn btn-success" onclick="window.location.href('view/register.jsp')">注册</button>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<button onclick="checkId()" type="submit" class="btn btn-danger">登录</button>
 				</div>
