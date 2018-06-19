@@ -8,7 +8,7 @@ import java.util.List;
 
 public class UserManage {
 
-	// Ìí¼ÓÓÃ»§
+	// æ·»åŠ ç”¨æˆ·
 	public int addUser(User user) {
 
 		String sql = "INSERT INTO user(userName,password) VALUES (?,?)";
@@ -30,7 +30,7 @@ public class UserManage {
 		return i;
 	}
 
-	// É¾³ıÓÃ»§
+	// åˆ é™¤ç”¨æˆ·
 	public int delUserForId(User user) {
 		String sql = "DELETE FROM user WHERE userNum=?";
 		int i = 0;
@@ -50,7 +50,7 @@ public class UserManage {
 		return i;
 	}
 
-	//¸ü¸ÄÃÜÂë
+	//ä¿®æ”¹å¯†ç 
 	public void updatePassword(int userNum,String newPassword){
 		String sql = "update user set password =? where userNum=?";
 		try {
@@ -65,7 +65,7 @@ public class UserManage {
 			ConMysql.close();
 		}
 	}
-	// »ñÈ¡ËùÓĞÓÃ»§
+	// æŸ¥è¯¢æ‰€æœ‰
 	public List<User> getAllUsers() {
 		String sql = "SELECT * FROM user";
 		List<User> users = new ArrayList<User>();
@@ -86,7 +86,7 @@ public class UserManage {
 		}
 		return users;
 	}
-	// ¼ì²éÓÃ»§µÇÂ¼
+	// ç™»å½•éªŒè¯
 	public boolean userLogin(User user) {
 		String sql = "SELECT * FROM user WHERE userName=?";
 		boolean flag = false;

@@ -23,16 +23,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://D:/Program Files/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46-bin.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/Program Files/mysql-connector-java-5.1.46/mysql-connector-java-5.1.46.jar!/" />
+          <root url="jar://D:/Program Files/mysql-connector-java-8.0.11/mysql-connector-java-8.0.11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

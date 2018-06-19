@@ -1,13 +1,11 @@
 package model;
 
 public class User {
-	// ¹«ÓÃid
 	private Integer id;
-	// µÇÂ¼ÓÃ»§Ãû¡¢ÃÜÂë
+	//ç”¨æˆ·å å¯†ç 
 	private String name;
 	private String password;
 
-	// set¡¢get·½·¨
 	public Integer getId() {
 		return id;
 	}

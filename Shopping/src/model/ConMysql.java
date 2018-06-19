@@ -11,42 +11,39 @@ public class ConMysql {
 	}
 
 	static {
-		// ¼ÓÔØÇı¶¯³ÌĞò
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("¼ÓÔØÇı¶¯³É¹¦");
+			System.out.println("åŠ è½½é©±åŠ¨æˆåŠŸ");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("Çı¶¯¼ÓÔØÊ§°Ü");
+			System.out.println("é©±åŠ¨åŠ è½½å¤±è´¥");
 		}
 	}
-	// Êı¾İ¿âÁ¬½Ó×Ö·û´®
-	private static String url = "jdbc:mysql://localhost:3306/web?useSSL=true";
-	// ÓÃ»§Ãû
+	// url
+	private static String url = "jdbc:mysql://localhost:3306/web?serverTimezone=GMT%2B8&amp";
+	// ç”¨æˆ·
 	private static String userName = "root";
-	// ÃÜÂë
-	private static String passWord = "zhoumingxianniubi";
-	// Á¬½Ó¶ÔÏó
+	// å¯†ç 
+	private static String passWord = "19960626lyf";
 	static Connection con = null;
-	// Óï¾ä¶ÔÏó
 	static PreparedStatement ps = null;
 
-	// Êı¾İ¿âÁ¬½Ó·½·¨
+	//è¿æ¥æ•°æ®åº“
 	public static void prepareConnection() {
 		try {
 			if (con == null || con.isClosed()) {
 				con = DriverManager.getConnection(url, userName, passWord);
-				System.out.println("Á´½ÓÊı¾İ¿â³É¹¦");
+				System.out.println("è¿æ¥æ•°æ®åº“æˆåŠŸ");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("Á¬½ÓÒì³£:" + e.getMessage());
+			throw new RuntimeException("è¿æ¥å¤±è´¥:" + e.getMessage());
 		}
 	}
 
-	// ¹Ø±Õ·½·¨
+	// å…³é—­è¿æ¥
 	public static void close() {
 		try {
 			if (ps != null) {
@@ -58,18 +55,18 @@ public class ConMysql {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("¹Ø±ÕÁ¬½ÓÒì³£:" + e.getMessage());
+			throw new RuntimeException("å…³é—­æ•°æ®åº“å¤±è´¥ï¼š"+e.getMessage());
 		}
 	}
 
-	// ²Ù×÷»Ø¹ö
+	//å›æ»š
 	public static void rollback() {
 		try {
 			con.rollback();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("»Ø¹öÊ§°Ü:" + e.getMessage());
+			throw new RuntimeException("å›æ»šå¼‚å¸¸:" + e.getMessage());
 		}
 	}
 
