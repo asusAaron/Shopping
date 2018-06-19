@@ -49,11 +49,11 @@ public class RegisterServlet extends HttpServlet {
 		user.setPassword(password);
 		UserManage manage=new UserManage();
 		if(manage.addUser(user)==1){
-			request.getSession().setAttribute("message", "ע��ɹ���");
+			request.getSession().setAttribute("message", "注册成功");
 			response.sendRedirect(request.getContextPath()+"/login.jsp");
 
 		}else{
-			request.setAttribute("message", "���ɿ���ʹ��ע��ʧ�ܣ�");
+			request.setAttribute("message", "注册失败");
 			request.getRequestDispatcher("/register.jsp").forward(request, response);
 		}
 	}
