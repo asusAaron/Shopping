@@ -20,12 +20,22 @@ public class ConMysql {
 			System.out.println("é©±åŠ¨åŠ è½½å¤±è´¥");
 		}
 	}
+<<<<<<< HEAD
 	// url
 	private static String url = "jdbc:mysql://localhost:3306/web?serverTimezone=GMT%2B8&amp";
 	// ç”¨æˆ·
 	private static String userName = "root";
 	// å¯†ç 
 	private static String passWord = "19960626lyf";
+=======
+	// Êý¾Ý¿âÁ¬½Ó×Ö·û´®
+	private static String url = "jdbc:mysql://localhost:3306/web?serverTimezone=GMT%2B8";
+	// ÓÃ»§Ãû
+	private static String userName = "root";
+	// ÃÜÂë
+	private static String passWord = "zz123456";
+	// Á¬½Ó¶ÔÏó
+>>>>>>> ac08048666f56f5c1c275c5960b76d96e64192dc
 	static Connection con = null;
 	static PreparedStatement ps = null;
 
@@ -34,7 +44,11 @@ public class ConMysql {
 		try {
 			if (con == null || con.isClosed()) {
 				con = DriverManager.getConnection(url, userName, passWord);
+<<<<<<< HEAD
 				System.out.println("è¿žæŽ¥æ•°æ®åº“æˆåŠŸ");
+=======
+				System.out.println("Á¬½ÓÊý¾Ý¿â³É¹¦");
+>>>>>>> ac08048666f56f5c1c275c5960b76d96e64192dc
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -68,6 +82,10 @@ public class ConMysql {
 			e.printStackTrace();
 			throw new RuntimeException("å›žæ»šå¼‚å¸¸:" + e.getMessage());
 		}
+	}
+
+	public static void main(String[] args) {
+		prepareConnection();
 	}
 
 }
