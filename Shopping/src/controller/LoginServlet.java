@@ -56,11 +56,11 @@ public class LoginServlet extends HttpServlet {
 		UserManage login = new UserManage();
 		if (login.userLogin(user)) {
 			session.setAttribute("user", user);
-			response.sendRedirect(request.getContextPath()+"/homepage.jsp");
+			response.sendRedirect(request.getContextPath()+"/view/homepage.jsp");
 		} else {
-			request.getSession().setAttribute("message", "输入不正确，请重新登录");
-			response.sendRedirect("web/view/login,jsp");
-			//request.getRequestDispatcher("/login.jsp").forward(request, response);
+			request.getSession().setAttribute("message", "用户名或密码错误,请重新输入");
+			//response.sendRedirect("web/view/login.jsp");
+			request.getRequestDispatcher("/view/login.jsp").forward(request, response);
 		}
 
 		out.flush();

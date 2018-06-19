@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=utf-8"
+		 pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,10 +10,10 @@
 	if (document.getElementById("password").value == ""&& document.getElementById("username").value == "") {
 			alert("请输入账号和密码！");
 			return false;
-		} else if (document.getElementById("id").value == "") {
+		} else if (document.getElementById("username").value == "") {
 			alert("请输入账号");
 			return false;
-		} else if ((document.getElementById("id").value).length!=11) {
+		} else if ((document.getElementById("username").value).length>50) {
 			alert("账号格式不对，请重新输入！");
 			return false;
 		} else if (document.getElementById("password").value == "") {
@@ -108,8 +108,8 @@ function checkPhoneInput(){
 					<span class="glyphicon glyphicon-user" style="font-size: 20px;"> </span>
 				</label>
 				<div class="col-sm-10">
-					<input onBlur="checkPhoneInput()" type="text" class="form-control" id="firstname"
-						   name="username" placeholder="请输入您的手机号">
+					<input onBlur="checkPhoneInput()" type="text" class="form-control" id="username"
+						   name="username" placeholder="请输入您的账号">
 				</div>
 			</div>
 			<div class="form-group">
@@ -117,7 +117,7 @@ function checkPhoneInput(){
 					<span class="glyphicon glyphicon-lock" style="font-size: 20px;"></span>
 				</label>
 				<div class="col-sm-10">
-					<input type="password" class="form-control" id="lastname"
+					<input type="password" class="form-control" id="password"
 						   name="password" placeholder="请输入密码">
 				</div>
 			</div>
