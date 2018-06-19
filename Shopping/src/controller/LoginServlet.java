@@ -58,8 +58,9 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("user", user);
 			response.sendRedirect(request.getContextPath()+"/homepage.jsp");
 		} else {
-			request.getSession().setAttribute("message", "�˺Ż��������");
-			request.getRequestDispatcher("/login.jsp").forward(request, response);
+			request.getSession().setAttribute("message", "输入不正确，请重新登录");
+			response.sendRedirect("web/view/login,jsp");
+			//request.getRequestDispatcher("/login.jsp").forward(request, response);
 		}
 
 		out.flush();

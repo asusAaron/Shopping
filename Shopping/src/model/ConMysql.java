@@ -14,6 +14,7 @@ public class ConMysql {
 		// 加载驱动程序
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("加载驱动成功");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -21,11 +22,11 @@ public class ConMysql {
 		}
 	}
 	// 数据库连接字符串
-	private static String url = "jdbc:mysql://localhost:3306/book_store?useUnicode=true&characterEncoding=utf8";
+	private static String url = "jdbc:mysql://localhost:3306/web?useSSL=true";
 	// 用户名
 	private static String userName = "root";
 	// 密码
-	private static String passWord = "********";
+	private static String passWord = "zhoumingxianniubi";
 	// 连接对象
 	static Connection con = null;
 	// 语句对象
@@ -36,6 +37,7 @@ public class ConMysql {
 		try {
 			if (con == null || con.isClosed()) {
 				con = DriverManager.getConnection(url, userName, passWord);
+				System.out.println("链接数据库成功");
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -70,4 +72,5 @@ public class ConMysql {
 			throw new RuntimeException("回滚失败:" + e.getMessage());
 		}
 	}
+
 }
