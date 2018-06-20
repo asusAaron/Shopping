@@ -26,7 +26,7 @@
       <file leaf-file-name="homepage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/homepage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="3438">
               <caret line="191" column="73" selection-start-line="191" selection-start-column="73" selection-end-line="191" selection-end-column="73" />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
+            <state relative-caret-position="1008">
               <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
             </state>
           </provider>
@@ -49,7 +49,7 @@
       <file leaf-file-name="cartlist.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/view/cartlist.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="2934">
               <caret line="163" column="45" selection-start-line="163" selection-start-column="39" selection-end-line="163" selection-end-column="45" />
             </state>
           </provider>
@@ -73,8 +73,11 @@
       <file leaf-file-name="UserManage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/UserManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="144">
+              <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+              <folding>
+                <element signature="e#3800#3806#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +97,8 @@
       <file leaf-file-name="BookManage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/BookManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            <state relative-caret-position="864">
+              <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,9 +179,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="977" />
-    <option name="height" value="1035" />
+    <option name="x" value="-10" />
+    <option name="width" value="978" />
+    <option name="height" value="1036" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -246,9 +249,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,7 +426,8 @@
       <workItem from="1529407141909" duration="6822000" />
       <workItem from="1529414317223" duration="9634000" />
       <workItem from="1529470953014" duration="3260000" />
-      <workItem from="1529474272404" duration="9339000" />
+      <workItem from="1529474272404" duration="9444000" />
+      <workItem from="1529483767194" duration="120000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore">
       <created>1529397248427</created>
@@ -474,14 +478,22 @@
       <option name="project" value="LOCAL" />
       <updated>1529483389993</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix another Null Pointer bug">
+      <created>1529483669849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1529483669849</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30182000" />
+    <option name="totallyTimeSpent" value="30407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1431" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -494,7 +506,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.43267778" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.43267778" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -504,7 +516,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32980332" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.56429654" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15737474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15737474" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -530,7 +542,8 @@
     <MESSAGE value="Merge branch 'master' of https://github.com/asusAaron/Shopping&#10;&#10;# Conflicts:&#10;#&#9;Shopping/.idea/encodings.xml&#10;#&#9;Shopping/.idea/misc.xml&#10;#&#9;Shopping/.idea/workspace.xml&#10;#&#9;Shopping/Shopping.iml&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/LoginServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/RegisterServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/ConMysql.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/User.class&#10;#&#9;Shopping/out/production/Shopping/controller/LoginServlet.class&#10;#&#9;Shopping/out/production/Shopping/controller/RegisterServlet.class&#10;#&#9;Shopping/out/production/Shopping/model/ConMysql.class&#10;#&#9;Shopping/out/production/Shopping/model/User.class&#10;#&#9;Shopping/src/controller/LoginServlet.java&#10;#&#9;Shopping/web/view/homepage.jsp" />
     <MESSAGE value="fix a bug" />
     <MESSAGE value="fix a Null Pointer bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix a Null Pointer bug" />
+    <MESSAGE value="fix another Null Pointer bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix another Null Pointer bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -543,18 +556,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/model/UserManage.java</url>
-          <line>72</line>
+          <line>98</line>
           <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/model/UserManage.java</url>
-          <line>131</line>
-          <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -873,7 +880,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="1008">
           <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
         </state>
       </provider>
@@ -883,30 +890,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/homepage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="3438">
           <caret line="191" column="73" selection-start-line="191" selection-start-column="73" selection-end-line="191" selection-end-column="73" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/view/cartlist.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="2934">
           <caret line="163" column="45" selection-start-line="163" selection-start-column="39" selection-end-line="163" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sql/web.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/BookManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -918,10 +915,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BookManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/UserManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="144">
+          <caret line="75" column="33" lean-forward="true" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+          <folding>
+            <element signature="e#3800#3806#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

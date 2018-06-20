@@ -73,7 +73,7 @@ public class UserManage {
 		if(books.indexOf(bookId)==-1)
 		{
 			String sql = "update user set books = ? where userName = ?";
-			if(bookId.length()==0)
+			if(books.length()==0)
 			{
 				books+=bookId;
 			}
