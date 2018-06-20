@@ -137,7 +137,7 @@ public class UserManage {
 			ConMysql.ps.setString(1,userName);
 
 			ResultSet rs = ConMysql.ps.executeQuery();
-			if(rs.next())
+			if(rs.getString("books")!=null)
 			{
 				result = rs.getString("books");
 			}
