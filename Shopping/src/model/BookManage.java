@@ -24,7 +24,7 @@ public class BookManage {
     //得到购物车图书
     public List<Book> getCartlist(String cartlist) throws SQLException {
         List<Book> booksList = new ArrayList<>();
-        if(cartlist.equals("")||cartlist==null)
+        if(cartlist==null||cartlist.equals(""))
         {
             return booksList;
         }
