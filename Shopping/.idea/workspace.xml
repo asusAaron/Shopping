@@ -7,18 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b5ceeef-c336-4f75-aadf-1971bb594e7f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/RegisterServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/ConMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/ConMysql.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/UserManage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/UserManage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/cartlist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/cartlist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/history.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/history.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/homepage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/homepage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/personInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/personInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Shopping_war_exploded/view/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/BookManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/BookManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/UserManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/UserManage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,16 +60,6 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resource/1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/resource/2.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file leaf-file-name="alipay.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/resource/alipay.jpg">
           <provider selected="true" editor-type-id="images" />
@@ -90,10 +70,31 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="BookManage.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserManage.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/UserManage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/AddServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookManage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/BookManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="2">
               <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,13 +149,13 @@
         <option value="$PROJECT_DIR$/src/controller/AddServlet.java" />
         <option value="$PROJECT_DIR$/src/controller/DeleteServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/model/UserManage.java" />
         <option value="$PROJECT_DIR$/web/view/register.jsp" />
         <option value="$PROJECT_DIR$/web/view/history.jsp" />
         <option value="$PROJECT_DIR$/web/view/personInfo.jsp" />
         <option value="$PROJECT_DIR$/web/view/homepage.jsp" />
         <option value="$PROJECT_DIR$/web/view/cartlist.jsp" />
         <option value="$PROJECT_DIR$/src/model/BookManage.java" />
+        <option value="$PROJECT_DIR$/src/model/UserManage.java" />
       </list>
     </option>
   </component>
@@ -422,7 +423,7 @@
       <workItem from="1529407141909" duration="6822000" />
       <workItem from="1529414317223" duration="9634000" />
       <workItem from="1529470953014" duration="3260000" />
-      <workItem from="1529474272404" duration="8847000" />
+      <workItem from="1529474272404" duration="9339000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore">
       <created>1529397248427</created>
@@ -459,15 +460,28 @@
       <option name="project" value="LOCAL" />
       <updated>1529482913567</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix a bug">
+      <created>1529483160677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1529483160677</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fix a Null Pointer bug">
+      <created>1529483389993</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1529483389993</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29690000" />
+    <option name="totallyTimeSpent" value="30182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1431" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -480,7 +494,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.43267778" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.43267778" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32924962" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
@@ -488,9 +502,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32980332" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.23146747" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.56429654" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15737474" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15737474" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -514,7 +528,9 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="some changes" />
     <MESSAGE value="Merge branch 'master' of https://github.com/asusAaron/Shopping&#10;&#10;# Conflicts:&#10;#&#9;Shopping/.idea/encodings.xml&#10;#&#9;Shopping/.idea/misc.xml&#10;#&#9;Shopping/.idea/workspace.xml&#10;#&#9;Shopping/Shopping.iml&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/LoginServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/RegisterServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/ConMysql.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/User.class&#10;#&#9;Shopping/out/production/Shopping/controller/LoginServlet.class&#10;#&#9;Shopping/out/production/Shopping/controller/RegisterServlet.class&#10;#&#9;Shopping/out/production/Shopping/model/ConMysql.class&#10;#&#9;Shopping/out/production/Shopping/model/User.class&#10;#&#9;Shopping/src/controller/LoginServlet.java&#10;#&#9;Shopping/web/view/homepage.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/asusAaron/Shopping&#10;&#10;# Conflicts:&#10;#&#9;Shopping/.idea/encodings.xml&#10;#&#9;Shopping/.idea/misc.xml&#10;#&#9;Shopping/.idea/workspace.xml&#10;#&#9;Shopping/Shopping.iml&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/LoginServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/controller/RegisterServlet.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/ConMysql.class&#10;#&#9;Shopping/out/artifacts/Shopping_war_exploded/WEB-INF/classes/model/User.class&#10;#&#9;Shopping/out/production/Shopping/controller/LoginServlet.class&#10;#&#9;Shopping/out/production/Shopping/controller/RegisterServlet.class&#10;#&#9;Shopping/out/production/Shopping/model/ConMysql.class&#10;#&#9;Shopping/out/production/Shopping/model/User.class&#10;#&#9;Shopping/src/controller/LoginServlet.java&#10;#&#9;Shopping/web/view/homepage.jsp" />
+    <MESSAGE value="fix a bug" />
+    <MESSAGE value="fix a Null Pointer bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix a Null Pointer bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,12 +541,39 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/UserManage.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/model/UserManage.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="42" />
+      <option name="time" value="44" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="rs.getString(&quot;books&quot;)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>rs.getString(&quot;books&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>rs.next()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>request.getSession()</expression-string>
         <language-id>JAVA</language-id>
@@ -758,16 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/AddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -799,13 +832,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/UserManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
@@ -874,11 +900,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/BookManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="2">
           <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/AddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/UserManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
         </state>
       </provider>
     </entry>
