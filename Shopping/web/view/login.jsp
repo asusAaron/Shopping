@@ -123,7 +123,7 @@ function checkPhoneInput(){
 			</div>
 			<div class="form-group">
 				<div class="btn-container">
-					<button type="button" class="btn btn-success" onclick="window.location.href('view/register.jsp')">注册</button>
+					<button type="button" class="btn btn-success" onclick="window.location.href = '/view/register.jsp';">注册</button>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<button onclick="checkId()" type="submit" class="btn btn-danger">登录</button>
 				</div>

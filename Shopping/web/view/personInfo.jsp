@@ -1,5 +1,6 @@
+<%@ page import="model.User" %>
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+		 pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,8 +18,8 @@
 </div>
 <div id="top"style="margin-left:10%;margin-top:1%;float:left;width:90%;height:10%">
 <ul class="nav nav-tabs">
-	<li><a href="homepage.jsp">主页</a></li>
-	<li><a href="cartlist.jsp">我的订单</a></li>
+	<li><a href="/book">主页</a></li>
+	<li><a href="/cartlist">我的订单</a></li>
 	<li><a href="history.jsp">购买历史</a></li>
 	<li class="dropdown" style="float:right">
 		<a class="dropdown-toggle"data-toggle="dropdown" href="#">
@@ -30,8 +31,8 @@
           <span class="glyphicon glyphicon-user"></span>&nbsp;User
         </a></li>
             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;设置</a></li>
-            <li><a href="homepage.jsp"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
-			<li><a href="cartlist.jsp">我的购物车</a></li>
+            <li><a href="/book"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
+			<li><a href="/cartlist">我的购物车</a></li>
 			<li><a href="history.jsp">购买记录</a></li>
 			<li class="divider"></li>
 		<li>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -46,11 +47,14 @@
 <p style="margin-left:20%;margin-top:8%;">个人信息</p>
 <div style="width:100%;height:100%">
 <div style="margin-right:2%;margin-left:15%;margin-top:4%;float:left; width:20%;height:60%">
+	<%
+		User u = (User) request.getSession().getAttribute("user");
+	%>
       <img style="width:250px;height:300px;" 
        src="img/person.jpg" alt="叶子图书"class="img-rounded">                                    
 </div>
 <div style=";margin-top:18%;margin-left:8%;float:left; width:20%;height:60%">
-      <p>手机号：&nbsp;<span id="iponeNumber">13015846233</span></p>  
+      <p>昵称：&nbsp;<span id="iponeNumber"><%=u.getName()%></span></p>
       <p>邮箱：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="iponeNumber">13015@qq.com</span></p>                                  
 </div>
 </div>

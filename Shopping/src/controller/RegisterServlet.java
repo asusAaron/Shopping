@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class registerservlet
  */
-@WebServlet("/registerservlet")
+@WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -50,11 +50,11 @@ public class RegisterServlet extends HttpServlet {
 		UserManage manage=new UserManage();
 		if(manage.addUser(user)==1){
 			request.getSession().setAttribute("message", "注册成功");
-			response.sendRedirect(request.getContextPath()+"/login.jsp");
+			response.sendRedirect("/view/login.jsp");
 
 		}else{
 			request.setAttribute("message", "注册失败");
-			request.getRequestDispatcher("/register.jsp").forward(request, response);
+			request.getRequestDispatcher("/view/register.jsp").forward(request, response);
 		}
 	}
 

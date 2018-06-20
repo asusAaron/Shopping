@@ -56,10 +56,10 @@ public class LoginServlet extends HttpServlet {
 		UserManage login = new UserManage();
 		if (login.userLogin(user)) {
 			session.setAttribute("user", user);
-			response.sendRedirect(request.getContextPath()+"/view/homepage.jsp");
+			response.sendRedirect(request.getContextPath()+"/book");
 		} else {
-			request.getSession().setAttribute("message", "用户名或密码错误,请重新输入");
-			//response.sendRedirect("web/view/login.jsp");
+			request.getSession().setAttribute("message", "登录失败");
+            //response.sendRedirect("/view/login.jsp");
 			request.getRequestDispatcher("/view/login.jsp").forward(request, response);
 		}
 

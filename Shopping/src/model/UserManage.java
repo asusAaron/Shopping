@@ -3,12 +3,13 @@ package model;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
 public class UserManage {
 
-	// Ìí¼ÓÓÃ»§
+	// æ·»åŠ ç”¨æˆ·
 	public int addUser(User user) {
 
 		String sql = "INSERT INTO user(userName,password) VALUES (?,?)";
@@ -30,7 +31,7 @@ public class UserManage {
 		return i;
 	}
 
-	// É¾³ıÓÃ»§
+	// åˆ é™¤ç”¨æˆ·
 	public int delUserForId(User user) {
 		String sql = "DELETE FROM user WHERE userNum=?";
 		int i = 0;
@@ -50,7 +51,7 @@ public class UserManage {
 		return i;
 	}
 
-	//¸ü¸ÄÃÜÂë
+	//ä¿®æ”¹å¯†ç 
 	public void updatePassword(int userNum,String newPassword){
 		String sql = "update user set password =? where userNum=?";
 		try {
@@ -65,7 +66,98 @@ public class UserManage {
 			ConMysql.close();
 		}
 	}
-	// »ñÈ¡ËùÓĞÓÃ»§
+	//æ·»åŠ è´­ç‰©è½¦å›¾ä¹¦
+	public boolean addBook(String bookId,String userName)
+	{
+		String books = getCartlistIds(userName);
+		if(books.indexOf(bookId)==-1)
+		{
+			String sql = "update user set books = ? where userName = ?";
+			if(bookId.length()==0)
+			{
+				books+=bookId;
+			}
+			else
+			{
+				books+=",";
+				books+=bookId;
+			}
+			doUpdateBooks(books,userName);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	//åˆ é™¤è´­ç‰©è½¦å›¾ä¹¦
+	public void deleteBook(String bookId,String userName)
+	{
+		String books = getCartlistIds(userName);
+		if(books.indexOf(bookId)!=-1)
+		{
+			List<String> idList = new ArrayList<>(Arrays.asList(books.split(",")));
+			idList.remove(bookId);
+			String newBooks = "";
+			if(idList.size()>0)
+			{
+				newBooks+=idList.get(0);
+				for(int i=1;i<idList.size();i++)
+				{
+					newBooks+=",";
+					newBooks+=idList.get(i);
+				}
+			}
+			doUpdateBooks(newBooks,userName);
+		}
+	}
+	private void doUpdateBooks(String books,String userName)
+	{
+		String sql = "update user set books = ? where userName = ?";
+		try {
+			ConMysql.prepareConnection();
+			ConMysql.ps = ConMysql.con.prepareStatement(sql);
+			ConMysql.ps.setString(1, books);
+			ConMysql.ps.setString(2, userName);
+			ConMysql.ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			ConMysql.close();
+		}
+	}
+	//å¾—åˆ°bookså­—ç¬¦ä¸²
+	public String getCartlistIds(String userName)
+	{
+		String sql = "SELECT * FROM user where userName = ?";
+		String result = null;
+		try {
+			ConMysql.prepareConnection();
+			ConMysql.ps = ConMysql.con.prepareStatement(sql);
+			ConMysql.ps.setString(1,userName);
+
+			ResultSet rs = ConMysql.ps.executeQuery();
+			if(rs.next())
+			{
+				result = rs.getString("books");
+			}
+			else
+			{
+				result = "";
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			ConMysql.close();
+		}
+		return result;
+	}
+	//å¾—åˆ°è´­ç‰©è½¦ä¸­æ‰€æœ‰å›¾ä¹¦
+	public List<Book> getCartlistBooks(String userName) throws SQLException {
+		BookManage bm = new BookManage();
+		return bm.getCartlist(getCartlistIds(userName));
+	}
+	// æŸ¥è¯¢æ‰€æœ‰
 	public List<User> getAllUsers() {
 		String sql = "SELECT * FROM user";
 		List<User> users = new ArrayList<User>();
@@ -86,7 +178,7 @@ public class UserManage {
 		}
 		return users;
 	}
-	// ¼ì²éÓÃ»§µÇÂ¼
+	// ç™»å½•éªŒè¯
 	public boolean userLogin(User user) {
 		String sql = "SELECT * FROM user WHERE userName=?";
 		boolean flag = false;

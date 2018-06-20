@@ -11,16 +11,16 @@ public class ConMysql {
 	}
 
 	static {
-		// 加载驱动程序
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			System.out.println("加载驱动成功");
+			System.out.println("鍔犺浇椹卞姩鎴愬姛");
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("驱动加载失败");
+			System.out.println("椹卞姩鍔犺浇澶辫触");
 		}
 	}
+
 	// 数据库连接字符串
 	private static String url = "jdbc:mysql://localhost:3306/web?serverTimezone=GMT%2B8";
 	// 用户名
@@ -29,10 +29,9 @@ public class ConMysql {
 	private static String passWord = "zz123456";
 	// 连接对象
 	static Connection con = null;
-	// 语句对象
 	static PreparedStatement ps = null;
 
-	// 数据库连接方法
+	//杩炴帴鏁版嵁搴?
 	public static void prepareConnection() {
 		try {
 			if (con == null || con.isClosed()) {
@@ -42,11 +41,11 @@ public class ConMysql {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("连接异常:" + e.getMessage());
+			throw new RuntimeException("杩炴帴澶辫触:" + e.getMessage());
 		}
 	}
 
-	// 关闭方法
+	// 鍏抽棴杩炴帴
 	public static void close() {
 		try {
 			if (ps != null) {
@@ -58,18 +57,18 @@ public class ConMysql {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("关闭连接异常:" + e.getMessage());
+			throw new RuntimeException("鍏抽棴鏁版嵁搴撳け璐ワ細"+e.getMessage());
 		}
 	}
 
-	// 操作回滚
+	//鍥炴粴
 	public static void rollback() {
 		try {
 			con.rollback();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw new RuntimeException("回滚失败:" + e.getMessage());
+			throw new RuntimeException("鍥炴粴寮傚父:" + e.getMessage());
 		}
 	}
 

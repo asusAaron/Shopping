@@ -6,21 +6,55 @@
     <welcome-file-list>
         <welcome-file>view/login.jsp</welcome-file>
     </welcome-file-list>
-    
+
+
     <servlet>
-        <servlet-name>Login</servlet-name>
+        <servlet-name>LoginServlet</servlet-name>
         <servlet-class>controller.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Login</servlet-name>
-        <url-pattern>/LoginServlet</url-pattern>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login.do</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>Register</servlet-name>
+        <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>controller.RegisterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Register</servlet-name>
-        <url-pattern>/RegisterServlet</url-pattern>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BookServlet</servlet-name>
+        <servlet-class>controller.BookServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookServlet</servlet-name>
+        <url-pattern>/book.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CartlistServlet</servlet-name>
+        <servlet-class>controller.CartlistServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartlistServlet</servlet-name>
+        <url-pattern>/cartlist.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>controller.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/addBook.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>controller.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/deleteBook.do</url-pattern>
     </servlet-mapping>
 </web-app>
+

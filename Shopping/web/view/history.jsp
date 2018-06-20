@@ -17,22 +17,22 @@
 </div>
 <div id="top"style="margin-left:10%;margin-top:1%;float:left;width:90%;height:10%">
 <ul class="nav nav-tabs">
-	<li><a href="homepage.jsp">主页</a></li>
-	<li><a href="#">我的订单</a></li>
-	<li><a href="#">购买历史</a></li>
+	<li><a href="/book">主页</a></li>
+	<li><a href="/cartlist">我的订单</a></li>
+	<li><a href="/view/history.jsp">购买历史</a></li>
 	<li class="dropdown" style="float:right">
 		<a class="dropdown-toggle"data-toggle="dropdown" href="#">
 		 <span class="glyphicon glyphicon-th-list"></span>&nbsp;
 			个人中心 <span class="caret"></span>
 		</a>
 		<ul class="dropdown-menu">
-			<li> <a href="personInfo.jsp">
+			<li> <a href="/view/personInfo.jsp">
           <span class="glyphicon glyphicon-user"></span>&nbsp;User
         </a></li>
             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;设置</a></li>
-            <li><a href="homepage.jsp"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
-			<li><a href="#">我的订单</a></li>
-			<li><a href="#">购买记录</a></li>
+            <li><a href="../book"><span class="glyphicon glyphicon-home"></span>&nbsp;主页</a></li>
+			<li><a href="../cartlist">我的订单</a></li>
+			<li><a href="/view/history.jsp">购买记录</a></li>
 			<li class="divider"></li>
 			<li>&nbsp;&nbsp;&nbsp;&nbsp;
 			<button type="button" style="float:center;"class="btn btn-primary btn-sm" id="btnClose"  onClick="custom_close()">退出</button>
